@@ -22,7 +22,7 @@
   }
 
   .card-hover {
-    @apply card transition-all duration-300 hover:border-slate-700 hover:shadow-xl hover:shadow-indigo-950/20 hover:-translate-y-0.5;
+    @apply bg-slate-900/80 backdrop-blur-sm border border-slate-800 rounded-2xl shadow-lg shadow-black/20 transition-all duration-300 hover:border-slate-700 hover:shadow-xl hover:shadow-indigo-950/20 hover:-translate-y-0.5;
   }
 
   .btn-primary {
@@ -78,7 +78,7 @@
   }
 
   .stat-card {
-    @apply card p-6 flex flex-col gap-2;
+    @apply bg-slate-900/80 backdrop-blur-sm border border-slate-800 rounded-2xl shadow-lg shadow-black/20 p-6 flex flex-col gap-2;
   }
 
   .stat-value {
@@ -111,8 +111,13 @@
 
 /* Skeleton loading animation */
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .skeleton {
@@ -124,8 +129,15 @@
 
 /* Fade in animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -134,8 +146,15 @@
 
 /* Slide up animation for modals */
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(16px) scale(0.98); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .animate-slide-up {
